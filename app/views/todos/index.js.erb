@@ -1,0 +1,2 @@
+$('tbody.todos').append("<%= escape_javascript(render @todos) %>");
+$('.paginator').html("<%= escape_javascript(paginate @todos, remote: true)%>")
